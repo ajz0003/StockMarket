@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_6ca36bb2",
+        "filename": "Client",
+        "patchSetId": 2
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1004833
+      },
+      "writtenOn": "2015-04-29T22:48:22Z",
+      "side": 1,
+      "message": "Confusing or unnecessary comment. Potentially remove?",
+      "revId": "ba8f3fe1fdb6a97a6048944b050a0dffe63180ea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
