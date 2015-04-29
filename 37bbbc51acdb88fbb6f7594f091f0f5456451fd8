@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "1a106d94_aca9e391",
+        "filename": "OrderBook",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1004833
+      },
+      "writtenOn": "2015-04-29T22:49:47Z",
+      "side": 1,
+      "message": "m is a vague variable name. myMarket could potentially be more helpful.",
+      "revId": "37bbbc51acdb88fbb6f7594f091f0f5456451fd8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a106d94_865a0828",
         "filename": "OrderBook",
         "patchSetId": 1
