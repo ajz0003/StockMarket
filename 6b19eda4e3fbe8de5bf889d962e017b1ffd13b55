@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_6c8a4b1c",
+        "filename": "Market",
+        "patchSetId": 1
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1004833
+      },
+      "writtenOn": "2015-04-29T22:52:24Z",
+      "side": 1,
+      "message": "The stock name s is vague. A more explanatory name could be used.",
+      "revId": "6b19eda4e3fbe8de5bf889d962e017b1ffd13b55",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
