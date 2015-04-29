@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "1a106d94_cc937f59",
+        "filename": "Trader",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1004833
+      },
+      "writtenOn": "2015-04-29T22:51:06Z",
+      "side": 1,
+      "message": "All these order type imports might be merged into pkg.order.* Would decrease lines, since almost all of the classes from order are included.",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 27
+      },
+      "revId": "5b0e85d26e94999f86698c2340e252f37dc4cfd3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a106d94_4b3819ef",
         "filename": "Trader",
         "patchSetId": 1
