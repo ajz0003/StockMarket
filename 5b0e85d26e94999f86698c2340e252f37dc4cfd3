@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "1a106d94_4b3819ef",
+        "filename": "Trader",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1004832
+      },
+      "writtenOn": "2015-04-29T19:07:14Z",
+      "side": 1,
+      "message": "These comments are not needed. Consider removing.",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 31
+      },
+      "revId": "5b0e85d26e94999f86698c2340e252f37dc4cfd3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a106d94_cbd9a9f4",
         "filename": "Trader",
         "patchSetId": 1
