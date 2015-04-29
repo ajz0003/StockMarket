@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_808670d9",
+        "filename": "Client",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1004743
+      },
+      "writtenOn": "2015-04-29T16:22:20Z",
+      "side": 1,
+      "message": "change to something that better represents what variable represents",
+      "range": {
+        "startLine": 11,
+        "startChar": 9,
+        "endLine": 11,
+        "endChar": 11
+      },
+      "revId": "9fe5412fb4a5660718d027c6ba8995d05de7eeb5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_60b894c8",
+        "filename": "Client",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1004743
+      },
+      "writtenOn": "2015-04-29T16:22:20Z",
+      "side": 1,
+      "message": "Change trader1 to Neda",
+      "range": {
+        "startLine": 26,
+        "startChar": 9,
+        "endLine": 26,
+        "endChar": 16
+      },
+      "revId": "9fe5412fb4a5660718d027c6ba8995d05de7eeb5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
