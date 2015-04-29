@@ -1,0 +1,170 @@
+package pkg.trader;
+
+import java.util.ArrayList;
+
+import pkg.exception.StockMarketException;
+import pkg.market.Market;
+import pkg.order.BuyOrder;
+import pkg.order.Order;
+import pkg.order.SellOrder;
+import pkg.util.OrderUtility;
+import pkg.order.OrderType;
+
+public class Trader {
+	String name;
+	double cashInHand;
+	ArrayList<Order> position;
+	ArrayList<Order> ordersPlaced;
+
+	public Trader(String name, double cashInHand) {
+		super();
+		this.name = name;
+		this.cashInHand = cashInHand;
+		this.position = new ArrayList<Order>();
+		this.ordersPlaced = new ArrayList<Order>();
+	}
+
+	public void buyFromBank(Market market, String symbol, int volume)
+			throws StockMarketExpection {
+		Stock stock = market.getStockForSymbol(symbol);
+		if (volume*(stock.getPrice()) > this.cashInHand){
+			throw new StockMarketExpection("Trader doesn't have enough money.");
+		}
+		else {
+			BuyOrder order = new BuyOrder(symbol, volume, stock.getPrice(), this);
+			this.position.add(order);
+			cashInHand = cashInHand - volume*stock.getPrice();
+		}
+		
+	}
+
+	public void placeNewOrder(Market market, String symbol, int volume,
+			double price, OrderType orderType) throws StockMarketExpection {
+		if (orderType == OrderType.BUY){
+			Stock stock = market.getStockForSymbol(symbol);
+			if (volume*(stock.getPrice()) > this.cashInHand){
+				throw new StockMarketExpection("Trader doesn't have enough money.");
+			}
+			else {
+				for (Order ordPlace:ordersPlaced){
+					if (ordPlace.getStockSymbol() == symbol) { 
+						throw new StockMarketExpection("Trader already has order for stock " + symbol);
+					}
+					else{
+						BuyOrder order = new BuyOrder(symbol, volume, stock.getPrice(), this);
+						this.ordersPlaced.add(order);
+						market.addOrder(order);
+					}
+				}
+			}	
+		}
+		else if (orderType == OrderType.SELL){
+			int i = 0;
+			Stock stock = market.getStockForSymbol(symbol);
+			for(Order pos:position){
+				if (pos.getStockSymbol() == symbol && pos.getSize() > 0){
+					i = 1;
+					if (volume < pos.getSize()){
+						throw new StockMarketExpection("Trader doesn't have enough stocks.");
+					}
+					else {
+						SellOrder order = new SellOrder(symbol, volume, stock.getPrice(), this);
+						this.ordersPlaced.add(order);
+						market.addOrder(order);
+					}
+				}
+			}
+			if (i == 0){
+				throw new StockMarketExpection("This stock is not owned by trader");
+			}
+		}
+		else {
+			
+		}
+	}
+
+	public void placeNewMarketOrder(Market market, String symbol, int volume,
+			double price, OrderType orderType) throws StockMarketExpection {
+		// Similar to the other method, except the order is a market order
+		if (orderType == OrderType.BUY){
+			Stock stock = market.getStockForSymbol(symbol);
+			if (volume*(stock.getPrice()) > this.cashInHand){
+				throw new StockMarketExpection("Trader doesn't have enough money.");
+			}
+			else {
+				BuyOrder order = new BuyOrder(symbol, volume, true, this);
+				if (market.orderBook.orderInBook() == 0) {
+					throw new StockMarketExpection("Trader has already placed order for this.");
+				}
+				else {
+					this.ordersPlaced.add(order);
+					market.addOrder(order);
+				}
+			}	
+		}
+		else if (orderType == OrderType.SELL){
+			Stock stock = market.getStockForSymbol(symbol);
+				SellOrder order = new SellOrder(symbol, volume, true, this);
+				this.ordersPlaced.add(order);
+				market.addOrder(order);
+		}
+	}
+
+	public void tradePerformed(Order order, double matchPrice)
+			throws StockMarketExpection {
+		if (!ordersPlaced.contains(order))
+			throw new StockMarketException(
+					"Unknown trade performed notification by for stock: "
+							+ order.getStockSymbol());
+		else {
+			ordersPlaced.remove(order);
+			order.setPrice(matchPrice);
+			if (order instanceof BuyOrder) {
+				cashInHand -= matchPrice * order.getSize();
+				Order alreadyOwn = OrderUtility.findAndExtractOrder(position,
+						order.getStockSymbol());
+				if (alreadyOwn != null) {
+					alreadyOwn.setSize(alreadyOwn.getSize() + order.getSize());
+					position.add(alreadyOwn);
+				} else {
+					position.add(order);
+				}
+			} else if (order instanceof SellOrder) {
+				cashInHand += matchPrice * order.getSize();
+				Order alreadyOwn = OrderUtility.findAndExtractOrder(position,
+						order.getStockSymbol());
+				if (alreadyOwn != null) {
+					alreadyOwn.setSize(alreadyOwn.getSize() - order.getSize());
+					if (alreadyOwn.getSize() == 0) {
+						position.remove(alreadyOwn);
+					} else {
+						position.add(alreadyOwn);
+					}
+
+				} else {
+					throw new StockMarketException(
+							"Unknown sell trade for stock: "
+									+ order.getStockSymbol());
+				}
+
+			}
+		}
+			
+	}
+
+	public void printTrader() {
+		System.out.println("Trader Name: " + name);
+		System.out.println("=====================");
+		System.out.println("Cash: " + cashInHand);
+		System.out.println("Stocks Owned: ");
+		for (Order order : position) {
+			order.printStockNameInOrder();
+		}
+		System.out.println("Stocks Desired: ");
+		for (Order order : ordersPlaced) {
+			order.printOrder();
+		}
+		System.out.println("+++++++++++++++++++++");
+		System.out.println("+++++++++++++++++++++");
+	}
+}
