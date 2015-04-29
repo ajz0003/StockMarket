@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_cbd9a9f4",
+        "filename": "Trader",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1004799
+      },
+      "writtenOn": "2015-04-29T18:55:52Z",
+      "side": 1,
+      "message": "\"a\" as a variable name is hard to understand, we can change it to something more meaningful",
+      "revId": "5b0e85d26e94999f86698c2340e252f37dc4cfd3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_eb8aa5bd",
+        "filename": "Trader",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1004799
+      },
+      "writtenOn": "2015-04-29T18:55:52Z",
+      "side": 1,
+      "message": "\"e\" as a variable is hard to understand, we can change it to something more meaningful",
+      "revId": "5b0e85d26e94999f86698c2340e252f37dc4cfd3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_0bf7415a",
+        "filename": "Trader",
+        "patchSetId": 1
+      },
+      "lineNbr": 132,
+      "author": {
+        "id": 1004799
+      },
+      "writtenOn": "2015-04-29T18:55:52Z",
+      "side": 1,
+      "message": "Delete the commented out code",
+      "revId": "5b0e85d26e94999f86698c2340e252f37dc4cfd3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
