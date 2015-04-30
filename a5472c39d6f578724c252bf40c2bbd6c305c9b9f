@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_9232345d",
+        "filename": "OrderUtility",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1004775
+      },
+      "writtenOn": "2015-04-30T19:13:22Z",
+      "side": 1,
+      "message": "remove this comment!",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 24
+      },
+      "revId": "a5472c39d6f578724c252bf40c2bbd6c305c9b9f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
