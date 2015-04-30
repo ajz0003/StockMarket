@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_1225a408",
+        "filename": "MarketHistory",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1004775
+      },
+      "writtenOn": "2015-04-30T19:16:38Z",
+      "side": 1,
+      "message": "Instead of commenting, extract the following 3 lines as a method and name the method properly.",
+      "range": {
+        "startLine": 50,
+        "startChar": 3,
+        "endLine": 50,
+        "endChar": 26
+      },
+      "revId": "2f359355d575e3d0273fb86b7dc4c4dde48b00d7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
