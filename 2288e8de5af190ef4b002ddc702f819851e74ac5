@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_3d7cf1b4",
+        "filename": "Trader",
+        "patchSetId": 2
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1004775
+      },
+      "writtenOn": "2015-04-30T20:16:59Z",
+      "side": 1,
+      "message": "What is i?! It is not index here. Use a good name.",
+      "range": {
+        "startLine": 62,
+        "startChar": 3,
+        "endLine": 62,
+        "endChar": 13
+      },
+      "revId": "2288e8de5af190ef4b002ddc702f819851e74ac5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_9d4c05a0",
+        "filename": "Trader",
+        "patchSetId": 2
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1004775
+      },
+      "writtenOn": "2015-04-30T20:16:59Z",
+      "side": 1,
+      "message": "Rename i",
+      "range": {
+        "startLine": 66,
+        "startChar": 5,
+        "endLine": 66,
+        "endChar": 6
+      },
+      "revId": "2288e8de5af190ef4b002ddc702f819851e74ac5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_bd474176",
+        "filename": "Trader",
+        "patchSetId": 2
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1004775
+      },
+      "writtenOn": "2015-04-30T20:16:59Z",
+      "side": 1,
+      "message": "Rename i",
+      "range": {
+        "startLine": 77,
+        "startChar": 7,
+        "endLine": 77,
+        "endChar": 8
+      },
+      "revId": "2288e8de5af190ef4b002ddc702f819851e74ac5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
