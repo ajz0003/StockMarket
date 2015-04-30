@@ -22,6 +22,29 @@
       "revId": "77594ced96a003247258cb2ab871c7311f69ed97",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_7e0c9fed",
+        "filename": "Trader",
+        "patchSetId": 3
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1004776
+      },
+      "writtenOn": "2015-04-30T22:47:29Z",
+      "side": 1,
+      "message": "Bad variable name! Variable names should be clear enough. Rename it.",
+      "range": {
+        "startLine": 64,
+        "startChar": 13,
+        "endLine": 64,
+        "endChar": 16
+      },
+      "revId": "77594ced96a003247258cb2ab871c7311f69ed97",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
