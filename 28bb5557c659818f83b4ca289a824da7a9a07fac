@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_5d560d2b",
+        "filename": "Client",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1004775
+      },
+      "writtenOn": "2015-04-30T20:18:15Z",
+      "side": 1,
+      "message": "Delete this comment, since you have to change 14 whenever you add or remove a trader",
+      "range": {
+        "startLine": 25,
+        "startChar": 2,
+        "endLine": 25,
+        "endChar": 22
+      },
+      "revId": "28bb5557c659818f83b4ca289a824da7a9a07fac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_9d336513",
+        "filename": "Client",
+        "patchSetId": 3
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1004775
+      },
+      "writtenOn": "2015-04-30T20:18:15Z",
+      "side": 1,
+      "message": "Delete this comment, since you have to change \"two\" whenever you add or remove a trader",
+      "range": {
+        "startLine": 41,
+        "startChar": 2,
+        "endLine": 41,
+        "endChar": 35
+      },
+      "revId": "28bb5557c659818f83b4ca289a824da7a9a07fac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
